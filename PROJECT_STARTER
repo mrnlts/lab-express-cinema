@@ -1,0 +1,6 @@
+//STEP 1 - Express generator
+$ npx express-generator --hbs --git --<directory-name>
+code .
+
+//STEP 2 - change syntax to ES6
+var to const, etc
