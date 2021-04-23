@@ -4,3 +4,19 @@ code .
 
 //STEP 2 - change syntax to ES6
 var to const, etc
+
+//STEP 3 - create routes (from app.js to specific files)
+example: 
+/app.js                         routes/users.js
+app.use('/', indexRouter);      router.get('/', (req, res, next) => {
+                                    res.render(dklfjhskdjhf)
+                                }) 
+
+//STEP 4 - import modules & create routes from package.json
+Install nodemon
+Scripts: start, dev
+Save new dependencies (regular --save or dev -D)
+
+//STEP 5 - Git 
+$ git init
+$ git ignore node_modules
