@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const Schema = mongoose;
+const { Schema, model } = mongoose;
 
 const movieSchema = new Schema({
     title: String,
@@ -11,6 +11,6 @@ const movieSchema = new Schema({
     showtimes: String
 });
 
-const Movie = mongoose.model('Movie', movieSchema);
+const Movie = model('Movie', movieSchema);
 
 module.exports = Movie;
