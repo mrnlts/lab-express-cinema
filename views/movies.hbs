@@ -1,11 +1,13 @@
-<h1>Ironhack Cinema</h1>
-
-{{#each movies }}
-  <div>
-      <img src="{{ this.image }}" alt="movie-poster">
-      <h3>Title: {{ this.title }}</h3>
-      <form action="/movies/{{ this.id }}" method="GET">
-        <button type="submit">See more</button>
-      </form>
-  </div>
-{{/each}}
+<div id="movie-page">
+  <h1>Ironhack Cinema</h1>
+  <h2>Click on the movie to see the showtimes!</h2>
+    <div id="movie-list">
+      {{#each movies }}
+        <div id="individual-movie">
+            <img src="{{ this.image }}" alt="movie-poster">
+            <h3>{{ this.title }}</h3>
+            <a href="/movies/{{ this.id }}">See more</a>
+        </div>
+      {{/each}}
+    </div>
+</div>

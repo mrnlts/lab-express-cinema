@@ -8,3 +8,5 @@ npm-debug.log
 # For learning purposes, we keep .env available for you
 # .env
 .eslintrc.json
+
+PROJECT_STARTER
